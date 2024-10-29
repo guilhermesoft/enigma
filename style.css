@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: #333;
+    border: 3px solid #4CAF50;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    max-width: 700px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header h1 i {
+    margin-right: 10px;
+}
+
+.enigma {
+    margin-top: 20px;
+}
+
+.frase {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    width: 60%;
+    font-size: 1em;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #32CD32;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #32CD32;
+}
+
+.dicas {
+    margin-top: 30px;
+}
+
+.dicas h2 {
+    color: #ffeb3b;
+    text-shadow: 0 0 5px #ffeb3b;
+}
+
+.dicas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dicas li {
+    background: #444;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 5px solid #4CAF50;
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.resultado {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    input {
+        width: 100%;
+    }
+}
